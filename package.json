@@ -1,0 +1,21 @@
+{
+  "name": "language-linuxcnc-gcode",
+  "version": "0.1.0",
+  "description": "G-Code (LinuxCNC) grammar support",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MX-Master/atom-language-linuxcnc-gcode.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  },
+  "readme": "# language-linuxcnc-gcode package\n\nSyntax source: [[http://www.linuxcnc.org/docs/2.6/html/]]\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/MX-Master/atom-language-linuxcnc-gcode/issues"
+  },
+  "homepage": "https://github.com/MX-Master/atom-language-linuxcnc-gcode#readme"
+}

@@ -1,0 +1,109 @@
+'fileTypes': [
+  'gcode'
+  'nc'
+  'gc'
+  'cnc'
+  'tap'
+  'plt'
+  'fnc'
+  'ngc'
+  'hnc'
+  'ncc'
+  'fgc'
+  'ncp'
+  'gcd'
+  'ncd'
+  'ncg'
+  'dnc'
+]
+'foldingStartMarker': '\\('
+'foldingStopMarker': '\\)'
+'name': 'G-Code for LinuxCNC'
+'patterns': [
+  {
+    'match': ';.*'
+    'name': 'comment.linuxcncgcode'
+  }
+  {
+    'begin': '\\('
+    'end': '\\)'
+    'name': 'comment.multiline.linuxcncgcode'
+  }
+  {
+    'match': '[nN][ \\t]*[0-9\\.]+'
+    'name': 'comment.linenumber.linuxcncgcode'
+  }
+  {
+    'match': '^[ \\t]*/.*'
+    'name': 'comment.skipped.linuxcncgcode'
+  }
+  {
+    'match': '[gG][ \\t]*[0-9][0-9\\.]*'
+    'name': 'keyword.control.gcode.linuxcncgcode'
+  }
+  {
+    'match': '[mM][ \\t]*[0-9][0-9\\.]*'
+    'name': 'keyword.control.mcode.linuxcncgcode'
+  }
+  {
+    'match': '[sS][ \\t]*[0-9][0-9\\.]*'
+    'name': 'keyword.control.spindlespeed.linuxcncgcode'
+  }
+  {
+    'match': '[fF][ \\t]*[0-9][0-9\\.]*'
+    'name': 'keyword.control.feedrate.linuxcncgcode'
+  }
+  {
+    'match': '[tT][ \\t]*[0-9][0-9\\.]*'
+    'name': 'keyword.control.tool.linuxcncgcode'
+  }
+  {
+    'match': '[oO][ \\t]*[0-9][0-9\\.]*'
+    'name': 'keyword.control.subprogram.linuxcncgcode'
+  }
+  {
+    'match': '\\b(?i)(sub|endsub|return|call)\\b'
+    'name': 'keyword.control.subroutine.linuxcncgcode'
+  }
+  {
+    'match': '\\b(?i)(if|else|endif)\\b'
+    'name': 'keyword.control.condition.linuxcncgcode'
+  }
+  {
+    'match': '\\b(?i)(do|while|endwhile|break|continue|repeat|endrepeat)\\b'
+    'name': 'keyword.control.loop.linuxcncgcode'
+  }
+  {
+    'match': '\\b(?i)(and|or|xor|eq|ne|gt|ge|lt|le|mod|round)\\b'
+    'name': 'keyword.operator.linuxcncgcode'
+  }
+  {
+    'match': '\\b(?i)(atan|abs|acos|asin|cos|fup|fix|round|ln|sin|sqrt|tan|exists)\\b'
+    'name': 'keyword.function.linuxcncgcode'
+  }
+  {
+    'match': '(?i)[XAUI][ \\t]*[\\-\\+]?[0-9\\.]+'
+    'name': 'variable.coord1.linuxcncgcode'
+  }
+  {
+    'match': '(?i)[YBVJ][ \\t]*[\\-\\+]?[0-9\\.]+'
+    'name': 'support.function.coord2.linuxcncgcode'
+  }
+  {
+    'match': '(?i)[ZCWK][ \\t]*[\\-\\+]?[0-9\\.]+'
+    'name': 'string.coord3.linuxcncgcode'
+  }
+  {
+    'match': '(?i)[qerpdhl][ \\t]*[\\-\\+]?[0-9\\.]+'
+    'name': 'constant.parameter.linuxcncgcode'
+  }
+  {
+    'match': '\\@[ \\t]*[\\-\\+]?[0-9\\.]+[ \\t]*\\^[ \\t]*[\\-\\+]?[0-9\\.]+'
+    'name': 'variable.polarcoord.linuxcncgcode'
+  }
+  {
+    'match': '(#\\d+|#?<[^>]+>)'
+    'name': 'string.varname.linuxcncgcode'
+  }
+]
+'scopeName': 'source.linuxcncgcode'
