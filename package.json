@@ -12,7 +12,7 @@
   },
   "dependencies": {
   },
-  "readme": "# language-linuxcnc-gcode package\n\nSyntax source: [[http://www.linuxcnc.org/docs/2.6/html/]]\n",
+  "readme": "# language-linuxcnc-gcode package\n\nSyntax source: http://www.linuxcnc.org/docs/2.6/html/\n",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/MX-Master/atom-language-linuxcnc-gcode/issues"
