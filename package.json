@@ -1,6 +1,6 @@
 {
   "name": "language-linuxcnc-gcode",
-  "version": "0.2.0",
+  "version": "0.1.1",
   "description": "G-Code (LinuxCNC) grammar support",
   "repository": {
     "type": "git",
